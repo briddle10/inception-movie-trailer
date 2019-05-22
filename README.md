@@ -1,5 +1,6 @@
-# inception-movie-trailer
-inception-movie-trailer
+# Inception
+
+##Totem Image overlay is now randomized with 10 different styles! Refresh the page to see!
 
 <!-- Sources -->
 Inception Movie Poster - http://wallpapershdnow.com/images/movies/fiction/inception/inception-wallpaper-7.jpg
