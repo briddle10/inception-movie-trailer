@@ -1,10 +1,381 @@
-/* My Styles */
-
-/* Diagnostic Styling 
-    * Change Background Color 
-    * Outline Elements
-    */
-
 *{
-    outline: dotted 2px red;
-}
+    margin: 0;
+  }
+  
+  body{
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 100%), url('https://i.imgur.com/WFUOQTs.png');
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #title{
+    color: rgba(100,150,180,.8);
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 120px;
+    letter-spacing: 25px;
+    z-index: 1;
+  }
+  
+  main{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 15px 10%;
+  
+  }
+  
+  #summary{
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    margin-right: 20px;
+  }
+  
+  h2{
+    margin-bottom: 10px;
+    color: rgba(180,200,230,1);
+    font-family: 'Lora', serif;
+    font-weight: 100px;
+    letter-spacing: 6px;
+    font-size: 36px;
+  }
+  
+  p{
+    color: white;
+    font-family: 'Lora', serif;
+    font-weight: 100px;
+    font-size: 18px;
+    line-height: 34px;
+  }
+  
+  h3{
+    margin-bottom: 6px;
+    color: rgba(180,200,230,1);
+    font-family: 'Lora', serif;
+    font-weight: 100px;
+    letter-spacing: 4px;
+    font-size: 28px;
+  }
+  
+  #movieReview {
+    margin: 35px 0px 35px 20px;
+    color: lightgrey;
+    line-height: 28px;
+    font-size: 20px;
+  }
+  
+  #movieInfo {
+    color: lightgrey;
+    line-height: 24px;
+    font-size: 16px;
+  }
+  
+  h1 span:nth-child(1),
+  h1 span:nth-child(4),
+  h1 span:nth-child(7){
+    animation: fadeInOut 2s ease both infinite;
+  }
+  
+  h1 span:nth-child(2),
+  span:nth-child(8),
+  span:nth-child(9){
+    animation: 3s fadeInOut ease both infinite;
+  }
+  
+  h1 span:nth-child(3),
+  span:nth-child(5),
+  span:nth-child(6){
+    animation: 4s fadeInOut ease both infinite;
+  }
+  
+  @keyframes fadeInOut{
+    0%{
+      opacity: 0;
+    }
+    70%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+  
+  #totem{
+    width: 50%;
+    background-size: cover;
+    position: absolute;
+    height: 150%;
+    z-index: 0;
+  }
+  
+  .color0{
+    background: url('https://i.imgur.com/3KzEng1.gif');
+    background-color: red;
+      background-blend-mode: multiply;
+  }
+  
+  .color1{
+    background: url('https://i.imgur.com/3KzEng1.gif');
+    background-color: blue;
+      background-blend-mode: multiply;
+  }
+  
+  .color2{
+    background: url('https://i.imgur.com/3KzEng1.gif');
+    background-color: yellow;
+      background-blend-mode: multiply;
+  }
+  
+  .color3{
+    background: url('https://i.imgur.com/3KzEng1.gif');
+    background-color: green;
+      background-blend-mode: multiply;
+  }
+  
+  .color4{
+    background: url('https://i.imgur.com/3KzEng1.gif');
+    background-color: magenta;
+      background-blend-mode: multiply;
+  }
+  
+  .color5{
+    background: url('https://i.imgur.com/3KzEng1.gif');
+    background-color: orange;
+      background-blend-mode: multiply;
+  }
+  
+  .color6{
+    background: url('https://i.imgur.com/3KzEng1.gif');
+    background-color: aqua;
+      background-blend-mode: multiply;
+  }
+  
+  .color7{
+    background: url('https://i.imgur.com/3KzEng1.gif');
+    background-color: chartreuse;
+      background-blend-mode: multiply;
+  }
+  
+  .color8{
+    background: url('https://i.imgur.com/3KzEng1.gif');
+    background-color: coral;
+      background-blend-mode: multiply;
+  }
+  
+  .color9{
+    background: url('https://i.imgur.com/3KzEng1.gif');
+  }
+  
+  .container {
+    padding: 0px 50px;
+    display: block;
+      margin: 20px auto;
+      max-width: 80%;
+  }
+  
+  .plyr__video-embed iframe {
+      top: -50%;
+      height: 200%;
+  }
+  
+  .plyr--full-ui input[type=range] {
+      border-radius: 0px;
+      color: rgba(100,150,180,.8);
+  }
+  
+  .plyr--video .plyr__controls {
+      color: grey;
+  }
+  
+  .plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true] {
+      background: rgba(100,150,180,.8);
+      color: black;
+  }
+  
+  #actors { 
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-left: 20px;
+  }
+  
+  #actors figure{
+    border: white 1px solid;
+    position: relative;
+    height: 135px;
+    width: 135px;
+    margin: 15px;
+  }
+  
+  #actors figure:hover .actorInfo{
+    opacity: 1;
+  }
+  
+  #actors figure:hover .actorPics{
+    opacity: 0;
+  }
+  
+  .actorPics{
+    height: 135px;
+    width: 135px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity .5s;
+  }
+  
+  .actorInfo{
+    position: absolute;
+    top: 0px;
+    height: 135px;
+    width: 135px;
+    border-radius: 3px;
+    background: rgba(100,150,180,.5);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .5s;
+  }
+  
+  .actorInfo p span{
+    text-align: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  
+  .actorInfo p{
+    text-align: center;
+    color: white;
+    font-family: 'Lora', serif;
+    font-weight: 100px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  #cobb{
+    background: url('https://i.imgur.com/r9Kf8Dy.jpg');
+    background-size: 280%;
+    background-position: 64% 0%;
+  }
+  
+  #arthur{
+    background: url('  https://i.imgur.com/NjQ60RE.jpg');
+    background-size: 300%;
+    background-position: 68% 0%;
+  }
+  
+  #ariadne{
+    background: url('https://i.imgur.com/voBUg9O.jpg');
+    background-size: 240%;
+    background-position: 7% 30%;
+  }
+  
+  #eames{
+    background: url('https://i.imgur.com/8TiS1tu.jpg');
+    background-size: 260%;
+    background-position: 94% 0%;
+  }
+  
+  #saito{
+    background: url('https://i.imgur.com/BchsIHJ.jpg');
+    background-size: 480%;
+    background-position: 31% 5%;
+  }
+  
+  #yusuf{
+    background: url('https://i.imgur.com/0Nay5oM.jpg');
+    background-size: 170%;
+    background-position: 57% 13%;
+  }
+  
+  #robert{
+    background: url('https://i.imgur.com/yDO8cCR.jpg');
+    background-size: 280%;
+    background-position: 11% 42%;
+  }
+  
+  #browning{
+    background: url('https://i.imgur.com/zIJHjBU.jpg');
+    background-size: 180%;
+    background-position: 87% 0%;
+  }
+  
+  #mal{
+    background: url('https://i.imgur.com/SsKJblh.jpg');
+    background-size: 340%;
+    background-position: 79% 32%;
+  }
+  
+  #miles{
+    background: url('https://i.imgur.com/m0d7FU8.jpg');
+    background-size: 330%;
+    background-position: 34% 0%;
+  }
+  
+  
+  
+  
+  footer {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  footer p{
+    color: grey;
+    font-family: 'Lora', serif;
+    font-weight: 100px;
+    font-size: 14px;
+  }
+  
+  footer p span {
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .container {
+      max-width: 90%;
+    }
+  }
+  
+  @media only screen and (max-width: 875px) {
+     #title{
+    font-size: 80px;
+    }
+  }
+  
+  @media only screen and (max-width: 710px) {
+     #title{
+    font-size: 64px;
+    }
+  }
+  
+  @media only screen and (min-width: 1150px) {
+    #title{
+    font-size: 150px;
+    }
+  }
+  
+  @media only screen and (min-width: 1475px) {
+    #title{
+    font-size: 200px;
+    }
+  }
