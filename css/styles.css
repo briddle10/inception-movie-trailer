@@ -114,7 +114,7 @@
     width: 50%;
     background-size: cover;
     position: absolute;
-    height: 150%;
+    height: 180%;
     z-index: 0;
   }
   
@@ -378,4 +378,11 @@
     #title{
     font-size: 200px;
     }
+  }
+
+  @media only screen and (min-width: 2000px) {
+    #totem{
+        width: 50%;
+        height: 250%;
+      }
   }
